@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fdaf7032d83b4b9c5a286cc0e566e68e",
+    "hash": "58d88ac821fe666a284f5ba9817ee550",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -76,11 +76,11 @@
         },
         {
             "name": "michaelesmith/email-parser",
-            "version": "dev-jsonable_message",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SebSept/EmailParser/",
-                "reference": "c17274c33f4b95fe10e906786f35c33b01e78d0b"
+                "reference": "ef240058b8a09483d76c8f7d0acce7421c3c7cdf"
             },
             "require": {
                 "doctrine/collections": "1.2.*@dev",
@@ -111,7 +111,7 @@
             "support": {
                 "issues": "https://github.com/michaelesmith/EmailParser/issues"
             },
-            "time": "2015-01-15 14:29:01"
+            "time": "2015-01-16 21:26:25"
         }
     ],
     "packages-dev": [],

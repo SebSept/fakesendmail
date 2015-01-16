@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "michaelesmith/email-parser": "dev-jsonable_message"
+        "michaelesmith/email-parser": "dev-master"
     },
     "license": "MIT",
     "authors": [
