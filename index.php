@@ -1,7 +1,7 @@
 #!/bin/env php
 <?php
 
-Phar::mapPhar();
+Phar::mapPhar('fakesendmail.phar');
 
 require 'phar://fakesendmail.phar/vendor/autoload.php';
 
