@@ -1,0 +1,26 @@
+{
+    "name": "sebsept/fakesendmail",
+    "description": "php package to replace sendmail in php configuration so that mails are not really sent but stored. Intended for developement, debugging.",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/SebSept/EmailParser/"
+        }
+    ],
+    "require": {
+        "michaelesmith/email-parser": "dev-jsonable_message"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SebSept",
+            "email": "sebastienmonterisi@yahoo.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SebSept\\FakeSendmail\\": "src/"
+        }
+    },
+    "minimum-stability": "beta"
+}

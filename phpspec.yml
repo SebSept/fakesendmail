@@ -1,0 +1,5 @@
+suites:
+    base_suite:
+        namespace: SebSept\FakeSendmail
+        psr4_prefix: SebSept\FakeSendmail
+formatter.name: pretty

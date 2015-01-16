@@ -1,0 +1,15 @@
+{
+	"annotations": false,
+	"stub": "index.php",
+	"chmod": "0755",
+	"directories": [
+        "src"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "in": "vendor"
+        }
+    ],
+    "output": "fakesendmail.phar"
+}
