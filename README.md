@@ -24,7 +24,7 @@ When a php script send a mail using `mail()` function, the mail is not sent, it 
 
 ### Phar
 
-- download the fakesendmail.phar form this repo
+- download the [fakesendmail.phar](https://github.com/SebSept/fakesendmail/blob/wip/fakesendmail.phar?raw=true)
 - put it anywhere where php can execute it
 - make it executable `chmod a+x fakesendmail.phar` for example.
 - update `php.ini` to use `fakesendmail.phar`. it may look like this :
