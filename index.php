@@ -2,11 +2,9 @@
 <?php
 
 Phar::mapPhar('fakesendmail.phar');
-
 require 'phar://fakesendmail.phar/vendor/autoload.php';
 
-$smtp = new SebSept\FakeSendmail\FakeSendMail();
-$smtp->read();
-$smtp->write();
+$fakesendmail = new SebSept\FakeSendmail\FakeSendMail();
+$fakesendmail->read()->write();
 
 __HALT_COMPILER();

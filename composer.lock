@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "58d88ac821fe666a284f5ba9817ee550",
+    "hash": "6ab53fdb82719eaeee6da2ee702abbb3",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -80,7 +80,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SebSept/EmailParser/",
-                "reference": "ef240058b8a09483d76c8f7d0acce7421c3c7cdf"
+                "reference": "57a7349b92e9c0a35fe1cbfa32870322c090437b"
             },
             "require": {
                 "doctrine/collections": "1.2.*@dev",
@@ -111,7 +111,7 @@
             "support": {
                 "issues": "https://github.com/michaelesmith/EmailParser/issues"
             },
-            "time": "2015-01-16 21:26:25"
+            "time": "2015-01-16 22:05:19"
         }
     ],
     "packages-dev": [],

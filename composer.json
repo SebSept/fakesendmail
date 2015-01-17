@@ -22,5 +22,7 @@
             "SebSept\\FakeSendmail\\": "src/"
         }
     },
-    "minimum-stability": "beta"
+    "minimum-stability": "beta",
+    "require-dev": {
+    }
 }

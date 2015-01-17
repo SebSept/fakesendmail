@@ -1,3 +1,8 @@
 vendor
 /nbproject
 test_builded.sh
+
+; tests
+/tests/unit/UnitTester.php
+/tests/_output/*
+!/tests/_output/.gitkeep
