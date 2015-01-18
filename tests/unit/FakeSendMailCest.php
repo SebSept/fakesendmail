@@ -1,15 +1,17 @@
 <?php
 
-use \UnitTester;
+use SebSept\FakeSendmail\FileWriter;
 
 class basicCest
 {
     use expectations;
     
-    private $default_file_location = '/tmp/lastmail';
+    private $default_file_location;
 
     public function _before(UnitTester $I)
     {
+        $this->default_file_location = (new FileWriter())->getOutputPath();
+
         if (file_exists($this->default_file_location))
         {
             $I->deleteFile($this->default_file_location);
@@ -25,6 +27,16 @@ class basicCest
     {
         $I->runShellCommand("cat ".$this->expectations[0]['file']." | php fakesendmail.phar");
         $I->seeFileFound($this->default_file_location);
+        $I->seeInThisFile($this->expectations[0]['expectation']);
+    }
+
+   public function runFakesendmailUsingCatPipedInputOnOtherPath(UnitTester $I)
+    {
+        $other_path = sys_get_temp_dir().'/somedir/another/mail.json';
+        $I->prepareOutputDirectory($other_path);
+
+        $I->runShellCommand("cat ".$this->expectations[0]['file']." | ./fakesendmail.phar --output {$other_path}");
+        $I->seeFileFound($other_path);
         $I->seeInThisFile($this->expectations[0]['expectation']);
     }
 

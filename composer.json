@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "michaelesmith/email-parser": "dev-master"
+        "michaelesmith/email-parser": "dev-master",
+        "pwfisher/command-line-php": "dev-master"
     },
     "license": "MIT",
     "authors": [

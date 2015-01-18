@@ -75,10 +75,22 @@ $tested_mail->date; // (string) "Wed, 30 Jan 2013 16:18:32 -0600"
 $tested_mail->to; // array
 $tested_mail->to[0]->address; // (string) "atapi@astrotraker.com"
 
-
 ```
 
 No mail was really sent.
+
+## Configuration
+
+The only option is the output file :
+
+```sh
+fakesendmail.phar --output /home/jack/dev/myproject/tests/lastsentmail.json
+```
+
+So json will we written in /home/jack/dev/myproject/tests/lastsentmail.json
+
+An exception will be thrown if php fails to write to the file (SebSept\FakeSendmail\FileWriterException)
+
 
 # Disclaimer
 
