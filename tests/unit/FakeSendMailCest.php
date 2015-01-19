@@ -23,7 +23,7 @@ class basicCest
 
     public function runFakesendmailUsingCatPipedInput(UnitTester $I)
     {
-        $I->runShellCommand("cat ".$this->expectations[0]['file']." | ./fakesendmail.phar");
+        $I->runShellCommand("cat ".$this->expectations[0]['file']." | php fakesendmail.phar");
         $I->seeFileFound($this->default_file_location);
         $I->seeInThisFile($this->expectations[0]['expectation']);
     }

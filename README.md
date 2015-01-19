@@ -38,6 +38,8 @@ sendmail_path = /usr/local/bin/fakesendmail.phar
 
 You may need to restart apache `sudo apachectl restart` (maybe not needed).
 
+![build status](https://api.travis-ci.org/SebSept/fakesendmail.svg)
+
 # Disclaimer
 
 Very early development stage : this is for local development use.

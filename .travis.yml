@@ -1,0 +1,14 @@
+language: php
+php:
+  - 5.5
+  - 5.4
+install:
+  - wget http://codeception.com/codecept.phar
+  - composer install
+  - php codecept.phar build
+  - chmod a+x fakesendmail.phar
+script:
+  - ls fakesendmail.phar
+  - cat vendor/michaelesmith/email-parser/test/MS/Email/Parser/Test/files/thunderbird.txt
+  - php codecept.phar run -vvv
+
