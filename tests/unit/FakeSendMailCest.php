@@ -35,7 +35,7 @@ class basicCest
         $other_path = sys_get_temp_dir().'/somedir/another/mail.json';
         $I->prepareOutputDirectory($other_path);
 
-        $I->runShellCommand("cat ".$this->expectations[0]['file']." | ./fakesendmail.phar --output {$other_path}");
+        $I->runShellCommand("cat ".$this->expectations[0]['file']." | php fakesendmail.phar --output {$other_path}");
         $I->seeFileFound($other_path);
         $I->seeInThisFile($this->expectations[0]['expectation']);
     }

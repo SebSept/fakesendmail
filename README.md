@@ -1,5 +1,7 @@
 # fakesendmail
 
+![build status](https://api.travis-ci.org/SebSept/fakesendmail.svg)
+
 ## What ?
 
 This package/phar is a sendmail replacement. 
